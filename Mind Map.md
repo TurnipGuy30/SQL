@@ -8,10 +8,10 @@
         - Names
         - Identification
         - Stock
-		- Customer accounts
-      - Store credentials securely
-		- Checkouts
-      - Link user to order
+      - Customer accounts
+        - Store credentials securely
+      - Checkouts
+        - Link user to order
 	  - Deliberate, structured queries
   - Website
     - Online shop
