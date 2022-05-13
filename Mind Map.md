@@ -1,0 +1,27 @@
+# Mind Map
+
+- Store
+  - Database
+    - SQL database
+	  - Used to store information
+	    - Products
+        - Names
+        - Identification
+        - Stock
+		- Customer accounts
+      - Store credentials securely
+		- Checkouts
+      - Link user to order
+	  - Deliberate, structured queries
+  - Website
+    - Online shop
+      - Convenient and versatile
+  - Evaluation
+  - Presentation
+    - Client
+      - Online shoppers
+    - Multimodal presentation
+	    - PowerPoint
+        - Text
+        - Voice
+        - Images
