@@ -1,5 +1,7 @@
 # Mind Map
 
+![Mind Map]("/Images/Mind Map.svg")
+
 - Store
   - Database
     - SQL database
