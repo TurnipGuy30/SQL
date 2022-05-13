@@ -1,6 +1,6 @@
 # Mind Map
 
-![Mind Map]("/Images/Mind Map.svg")
+![Mind Map](/Images/Mind%20Map.svg)
 
 - Store
   - Database
