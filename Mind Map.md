@@ -2,28 +2,30 @@
 
 ![Mind Map](/Images/Mind%20Map.svg)
 
+```md
 - Store
   - Database
-    - SQL database
-	  - Used to store information
+    - SQL Database
+	  - Used to Store Information
 	    - Products
         - Names
         - Identification
         - Stock
-      - Customer accounts
-        - Store credentials securely
+      - Customer Accounts
+        - Store Credentials Securely
       - Checkouts
-        - Link user to order
-	  - Deliberate, structured queries
+        - Link User to Order
+	  - Deliberate, Structured Queries
   - Website
-    - Online shop
-      - Convenient and versatile
+    - Online Shop
+      - Convenient and Versatile
   - Evaluation
   - Presentation
     - Client
-      - Online shoppers
-    - Multimodal presentation
+      - Online Shoppers
+    - Multimodal Presentation
 	    - PowerPoint
         - Text
         - Voice
         - Images
+```
