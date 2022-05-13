@@ -1,2 +1,4 @@
-# Databases
-Database Technical Proposal - Yr. 10 2022
+<div align="center">
+	<h1><code>Databases</code></h1>
+	<p>Database Technical Proposal</p>
+</div>
