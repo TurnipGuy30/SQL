@@ -7,7 +7,7 @@
 
 ## Mind Map
 
-![Mind Map](/Images/Mind%20Map.svg)
+![Mind Map](/images/Mind%20Map.svg)
 
 ```md
 - Store
@@ -34,11 +34,11 @@
 			- PowerPoint
 				- Text
 				- Voice
-				- Images
+				- images
 ```
 
 ---
 
 ## Wireframe
 
-![Wireframe 1](/Images/Wireframe%201.svg)
+![Wireframe 1](/images/Wireframe%201.svg)
