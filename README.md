@@ -3,6 +3,8 @@
 	<h3>Database Technical Proposal</h3>
 </div>
 
+---
+
 ## Mind Map
 
 ![Mind Map](/Images/Mind%20Map.svg)
