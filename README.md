@@ -37,6 +37,8 @@
 				- Images
 ```
 
+---
+
 ## Wireframe
 
 ![Wireframe 1](/Images/Wireframe%201.svg)
