@@ -4,6 +4,7 @@ CREATE TABLE items (
 	id INTEGER PRIMARY KEY AUTOINCREMENT,
 	name TEXT,
 	price REAL,
+	weight REAL,
 	stock INTEGER
 );
 CREATE TABLE users (
