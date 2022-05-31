@@ -30,9 +30,9 @@ CREATE TABLE purchases (
 	        ON DELETE NO ACTION
 );
 
-INSERT INTO items(name, price, stock) VALUES ("Item 1", 2.5, 7), ("Item 2", 3.7, 13), ("Item 3", 5, 10);
-INSERT INTO users(name) VALUES ("Customer 1"), ("Customer 2"), ("Customer 3");
-INSERT INTO purchases(user_id, item_id) VALUES (1, 2), (3, 1), (2, 3);
+INSERT INTO items(name) VALUES ("Foo"), ("Bar"), ("Baz");
+INSERT INTO users(name) VALUES ("John"), ("Jacob"), ("Jingleheimer"), ("Schmidt");
+INSERT INTO purchases(user_id, item_id) VALUES (4, 1), (4, 2), (1, 2), (3, 1), (3, 2), (3, 3), (2, 3);
 
 SELECT * FROM items;
 SELECT * FROM users;
