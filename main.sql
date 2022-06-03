@@ -30,9 +30,20 @@ CREATE TABLE purchases (
 	        ON DELETE NO ACTION
 );
 
-INSERT INTO items (name) VALUES ("foo"), ("bar"), ("baz"), ("qux"), ("quux");
+INSERT INTO items (name) VALUES ("foo"), ("bar"), ("baz"), ("qux"), ("quux"), ("quuz"), ("corge"), ("grault"), ("garply"), ("waldo"), ("fred"), ("plugh"), ("xyzzy"), ("thud");
 INSERT INTO users (name) VALUES ("John"), ("Jacob"), ("Jingleheimer"), ("Schmidt");
-INSERT INTO purchases (user_id, item_id) VALUES (4, 2), (4, 5), (1, 2), (3, 1), (3, 2), (3, 3), (2, 3), (1, 4), (1, 1), (4, 4), (3, 5);
+
+INSERT INTO purchases (user_id, item_id) VALUES
+    ((SELECT ABS(RANDOM() % COUNT(name)) + 1 FROM users), (SELECT ABS(RANDOM() % COUNT(name)) + 1 FROM items)),
+    ((SELECT ABS(RANDOM() % COUNT(name)) + 1 FROM users), (SELECT ABS(RANDOM() % COUNT(name)) + 1 FROM items)),
+    ((SELECT ABS(RANDOM() % COUNT(name)) + 1 FROM users), (SELECT ABS(RANDOM() % COUNT(name)) + 1 FROM items)),
+    ((SELECT ABS(RANDOM() % COUNT(name)) + 1 FROM users), (SELECT ABS(RANDOM() % COUNT(name)) + 1 FROM items)),
+    ((SELECT ABS(RANDOM() % COUNT(name)) + 1 FROM users), (SELECT ABS(RANDOM() % COUNT(name)) + 1 FROM items)),
+    ((SELECT ABS(RANDOM() % COUNT(name)) + 1 FROM users), (SELECT ABS(RANDOM() % COUNT(name)) + 1 FROM items)),
+    ((SELECT ABS(RANDOM() % COUNT(name)) + 1 FROM users), (SELECT ABS(RANDOM() % COUNT(name)) + 1 FROM items)),
+    ((SELECT ABS(RANDOM() % COUNT(name)) + 1 FROM users), (SELECT ABS(RANDOM() % COUNT(name)) + 1 FROM items)),
+    ((SELECT ABS(RANDOM() % COUNT(name)) + 1 FROM users), (SELECT ABS(RANDOM() % COUNT(name)) + 1 FROM items)),
+    ((SELECT ABS(RANDOM() % COUNT(name)) + 1 FROM users), (SELECT ABS(RANDOM() % COUNT(name)) + 1 FROM items));
 
 SELECT id "Item ID", name "Item Name" FROM items;
 SELECT id "User ID", name "Username" FROM users;
