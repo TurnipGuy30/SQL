@@ -1,9 +1,18 @@
+<hr>
 <div align="center">
 	<h1><code>SQL</code></h1>
 	<h3>Database Technical Proposal</h3>
 </div>
+<hr>
 
----
+## Elements of Presentation
+
+- Bullet point list
+- Mind map
+- Existing solutions
+- Wireframe
+- Tables and SQL
+- Evaluation
 
 ## Mind Map
 
