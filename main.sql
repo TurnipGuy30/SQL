@@ -25,20 +25,20 @@ CREATE TABLE purchases (
 	        ON UPDATE NO ACTION
 	        ON DELETE NO ACTION
 	FOREIGN KEY (item_id)
-	    REFERENCES items(id)
+	    REFERENCES items (id)
 	        ON UPDATE NO ACTION
 	        ON DELETE NO ACTION
 );
 
-INSERT INTO items(name) VALUES ("Foo"), ("Bar"), ("Baz");
-INSERT INTO users(name) VALUES ("John"), ("Jacob"), ("Jingleheimer"), ("Schmidt");
-INSERT INTO purchases(user_id, item_id) VALUES (4, 1), (4, 2), (1, 2), (3, 1), (3, 2), (3, 3), (2, 3);
+INSERT INTO items (name) VALUES ("foo"), ("bar"), ("baz"), ("qux"), ("quux");
+INSERT INTO users (name) VALUES ("John"), ("Jacob"), ("Jingleheimer"), ("Schmidt");
+INSERT INTO purchases (user_id, item_id) VALUES (4, 2), (4, 5), (1, 2), (3, 1), (3, 2), (3, 3), (2, 3), (1, 4), (1, 1), (4, 4), (3, 5);
 
-SELECT * FROM items;
-SELECT * FROM users;
-SELECT * FROM purchases;
+SELECT id "Item ID", name "Item Name" FROM items;
+SELECT id "User ID", name "Username" FROM users;
+SELECT id "Purchase ID", user_id "User ID", item_id "Item ID" FROM purchases;
 
-SELECT users.name, items.name FROM purchases
+SELECT users.name "User", items.name "Item" FROM purchases
 	JOIN users
 	ON purchases.user_id = users.id
 	JOIN items
