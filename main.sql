@@ -21,29 +21,29 @@ CREATE TABLE purchases (
 	user_id INTEGER,
 	item_id INTEGER,
 	FOREIGN KEY (user_id)
-	    REFERENCES users (id)
-	        ON UPDATE NO ACTION
-	        ON DELETE NO ACTION
+		REFERENCES users (id)
+			ON UPDATE NO ACTION
+			ON DELETE NO ACTION
 	FOREIGN KEY (item_id)
-	    REFERENCES items (id)
-	        ON UPDATE NO ACTION
-	        ON DELETE NO ACTION
+		REFERENCES items (id)
+			ON UPDATE NO ACTION
+			ON DELETE NO ACTION
 );
 
 INSERT INTO items (name) VALUES ("foo"), ("bar"), ("baz"), ("qux"), ("quux"), ("quuz"), ("corge"), ("grault"), ("garply"), ("waldo"), ("fred"), ("plugh"), ("xyzzy"), ("thud");
 INSERT INTO users (name) VALUES ("John"), ("Jacob"), ("Jingleheimer"), ("Schmidt");
 
 INSERT INTO purchases (user_id, item_id) VALUES
-    ((SELECT ABS(RANDOM() % COUNT(name)) + 1 FROM users), (SELECT ABS(RANDOM() % COUNT(name)) + 1 FROM items)),
-    ((SELECT ABS(RANDOM() % COUNT(name)) + 1 FROM users), (SELECT ABS(RANDOM() % COUNT(name)) + 1 FROM items)),
-    ((SELECT ABS(RANDOM() % COUNT(name)) + 1 FROM users), (SELECT ABS(RANDOM() % COUNT(name)) + 1 FROM items)),
-    ((SELECT ABS(RANDOM() % COUNT(name)) + 1 FROM users), (SELECT ABS(RANDOM() % COUNT(name)) + 1 FROM items)),
-    ((SELECT ABS(RANDOM() % COUNT(name)) + 1 FROM users), (SELECT ABS(RANDOM() % COUNT(name)) + 1 FROM items)),
-    ((SELECT ABS(RANDOM() % COUNT(name)) + 1 FROM users), (SELECT ABS(RANDOM() % COUNT(name)) + 1 FROM items)),
-    ((SELECT ABS(RANDOM() % COUNT(name)) + 1 FROM users), (SELECT ABS(RANDOM() % COUNT(name)) + 1 FROM items)),
-    ((SELECT ABS(RANDOM() % COUNT(name)) + 1 FROM users), (SELECT ABS(RANDOM() % COUNT(name)) + 1 FROM items)),
-    ((SELECT ABS(RANDOM() % COUNT(name)) + 1 FROM users), (SELECT ABS(RANDOM() % COUNT(name)) + 1 FROM items)),
-    ((SELECT ABS(RANDOM() % COUNT(name)) + 1 FROM users), (SELECT ABS(RANDOM() % COUNT(name)) + 1 FROM items));
+	((SELECT ABS(RANDOM() % COUNT(name)) + 1 FROM users), (SELECT ABS(RANDOM() % COUNT(name)) + 1 FROM items)),
+	((SELECT ABS(RANDOM() % COUNT(name)) + 1 FROM users), (SELECT ABS(RANDOM() % COUNT(name)) + 1 FROM items)),
+	((SELECT ABS(RANDOM() % COUNT(name)) + 1 FROM users), (SELECT ABS(RANDOM() % COUNT(name)) + 1 FROM items)),
+	((SELECT ABS(RANDOM() % COUNT(name)) + 1 FROM users), (SELECT ABS(RANDOM() % COUNT(name)) + 1 FROM items)),
+	((SELECT ABS(RANDOM() % COUNT(name)) + 1 FROM users), (SELECT ABS(RANDOM() % COUNT(name)) + 1 FROM items)),
+	((SELECT ABS(RANDOM() % COUNT(name)) + 1 FROM users), (SELECT ABS(RANDOM() % COUNT(name)) + 1 FROM items)),
+	((SELECT ABS(RANDOM() % COUNT(name)) + 1 FROM users), (SELECT ABS(RANDOM() % COUNT(name)) + 1 FROM items)),
+	((SELECT ABS(RANDOM() % COUNT(name)) + 1 FROM users), (SELECT ABS(RANDOM() % COUNT(name)) + 1 FROM items)),
+	((SELECT ABS(RANDOM() % COUNT(name)) + 1 FROM users), (SELECT ABS(RANDOM() % COUNT(name)) + 1 FROM items)),
+	((SELECT ABS(RANDOM() % COUNT(name)) + 1 FROM users), (SELECT ABS(RANDOM() % COUNT(name)) + 1 FROM items));
 
 SELECT id "Item ID", name "Item Name" FROM items;
 SELECT id "User ID", name "Username" FROM users;
