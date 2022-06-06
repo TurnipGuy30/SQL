@@ -14,6 +14,8 @@
 - Tables and SQL
 - Evaluation
 
+---
+
 ## Mind Map
 
 ![Mind Map](/images/Mind%20Map.svg)
